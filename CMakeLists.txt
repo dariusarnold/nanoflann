@@ -57,7 +57,7 @@ set(INSTALL_COPYRIGHT_DIR "share/doc/libnanoflann-dev")
 # Define nanoflann lib (header-only)
 add_library(nanoflann INTERFACE)
 
-target_include_directories(nanoflann
+target_include_directories(nanoflann SYSTEM
 	INTERFACE
 		$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 		$<INSTALL_INTERFACE:${INSTALL_INCLUDE_DIR}>)
